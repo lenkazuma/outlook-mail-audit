@@ -1,0 +1,8 @@
+[
+  {
+    "type": "senderContains",
+    "match": "newsletter@example.com",
+    "reason": "Inbox unsorted 8 messages in last 365 days",
+    "suggestedFolder": "Auto/example.com"
+  }
+]

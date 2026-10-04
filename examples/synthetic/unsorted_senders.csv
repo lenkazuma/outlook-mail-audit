@@ -1,0 +1,3 @@
+sender,unsortedCount,alreadyCoveredByExistingSenderRule
+newsletter@example.com,8,False
+receipts@example.org,5,False

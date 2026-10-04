@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "scannedAtUtc": "2026-01-01T00:00:00+00:00",
+  "account": {"displayName": "Example User", "mail": "reader@example.com"},
+  "days": 365,
+  "foldersScanned": 3,
+  "messagesScanned": 20,
+  "inboxUnsortedCount": 13,
+  "rulesCount": 1,
+  "proposedRuleCount": 1
+}

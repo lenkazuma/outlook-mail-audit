@@ -1,0 +1,24 @@
+name: Offline tests
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Offline unit tests (no mailbox dependencies)
+        run: python -m unittest discover -s tests -v
+      - name: Check both command-line help screens
+        run: |
+          python scan_readonly.py --help
+          python scan_outlook_local_readonly.py --help

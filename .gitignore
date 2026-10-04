@@ -1,0 +1,33 @@
+# Credentials and authentication caches
+.env
+.env.*
+!.env.example
+*token*cache*
+*.pem
+*.key
+# Real mailbox reports (examples below are synthetic)
+output/
+output_local/
+output_*/
+mailbox_profile.json
+folders.csv
+folders.json
+rules_inventory.csv
+rules.json
+all_messages_metadata.csv
+unsorted_inbox_messages.csv
+unsorted_senders.csv
+proposed_rules.json
+!examples/synthetic/**
+# Local Python/editor files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
